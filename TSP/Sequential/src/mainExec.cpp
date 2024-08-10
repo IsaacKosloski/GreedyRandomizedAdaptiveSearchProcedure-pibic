@@ -1,8 +1,8 @@
 /*Greedy Randomized Adaptive Search Procedures
  *
  * g++ node.cpp scanner.cpp functions.cpp main.cpp -o TspSeq2 -Wall -pedantic
- * ./TspSeq2 ../Benchmarks/a280.tsp/a280.tsp ../Solutions/Sequential/a280.sol
- * ./TspSeq2 ../Benchmarks/d198.tsp/d198.tsp ../Solutions/Sequential/d198two.sol
+ * ./TspSeq2 ../Benchmarks/a280/a280 ../Solutions/Sequential/a280.sol
+ * ./TspSeq2 ../Benchmarks/d198/d198 ../Solutions/Sequential/d198two.sol
  * */
 
 #include "scanner.h"
@@ -84,7 +84,7 @@ int main(int argc,char **argv)
         //cout << "Elapsed time: " << elapsed.count() << " s\n";
 
         string dimension(argv[2]);
-        string outputFile1 = "../../Solutions/Yoga/Sequential/" + dimension + "/" + dimension + "i3GDBO2B" + to_string(exec) + ".sol" ;
+        string outputFile1 = "../../Solutions/Tempestade/Sequential/" + dimension + "/" + dimension + "i3GDBO2B" + to_string(exec) + ".sol" ;
         char const *outputFileC = outputFile1.c_str();
 
         double bestSolutionCost = tourCost(bestTour, tsp->nodesDistance, tsp->dimensionOfNodes);
