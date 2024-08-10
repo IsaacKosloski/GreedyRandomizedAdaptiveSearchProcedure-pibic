@@ -1,4 +1,5 @@
 #!/bin/bash
+./TspSeq ../../Benchmarks/a5.tsp/a5.tsp a5
 ./TspSeq ../../Benchmarks/kroA100.tsp/kroA100.tsp kroA100
 ./TspSeq ../../Benchmarks/ch130.tsp/ch130.tsp ch130
 ./TspSeq ../../Benchmarks/d198.tsp/d198.tsp d198
